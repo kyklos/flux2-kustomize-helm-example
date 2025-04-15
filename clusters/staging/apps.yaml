@@ -17,6 +17,6 @@ spec:
   postBuild:
     substitute:
       quote: '"' # double quote var
-      id: 123
+      id: 999
       enabled: "true"
       space: "podinfo"
