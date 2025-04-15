@@ -4,3 +4,6 @@ metadata:
   name: $(space)
   labels:
     toolkit.fluxcd.io/tenant: dev-team
+    test: $(id)
+    testing: $(space)
+    
