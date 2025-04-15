@@ -6,4 +6,16 @@ metadata:
     toolkit.fluxcd.io/tenant: dev-team
     test: ${quote}${id}${quote}
     testing: ${space}
-    
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app.kubernetes.io/name: proxy
+  ports:
+  - name: name-of-service-port
+    protocol: TCP
+    port: ${quote}${id}${quote}
+    targetPort: http-web-svc
